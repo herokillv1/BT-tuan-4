@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt-xay-dung-lop-mo-ta-temperature</title>
+</head>
+<body>
+<script>
+    function Temperature(c) {
+        this.c = c;
+        this.cToF = function () {
+            return c*1.8 + 32;
+        }
+        this.cToK = function () {
+            return c+273.15;
+        }
+    }
+    let temp =new Temperature(25)
+    alert(temp.cToF() + ' & ' + temp.cToK())
+
+
+
+</script>
+
+
+</body>
+</html>
